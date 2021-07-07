@@ -1,30 +1,37 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <unistd.h>
-
+#include <stdlib.h>
 void *myturn(void *arg){
 
-    while (1)
+    int *ptr = malloc(sizeof(int));
+    *ptr = 5;
+   for (int i = 1; i < 9; i++)
     {
         sleep(1);
-        printf("my turn\n");
+        printf("my turn %d %d\n", i, *ptr);
+        (*ptr)++;
     }
-    return (NULL);
+    return (ptr);
 }
 
 void yourturn(){
 
-    while (1)
+    for(int i = 1; i < 3; i++)
     {
         sleep(1);
-        printf("your turn\n");
+        printf("your turn %d \n", i);
     }
 }
 
 int main()
 {
+    int *result;
     pthread_t new_thread;
-
+    // I can pass argument to thread
     pthread_create(&new_thread, NULL, myturn, NULL);
     yourturn();
+    // wait until the thread is done before we exit and get argument from thread
+    pthread_join(new_thread, (void *)&result);
+    printf("new_thread done: *result: %d\n", *result);
 }
