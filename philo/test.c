@@ -1,37 +1,90 @@
+// #include <pthread.h>
+// #include <stdio.h>
+// #include <unistd.h> //usleep
+// #include <stdlib.h>
+
+// unsigned int count = 1;
+
+// void *thread_funct(void *arg)
+// {
+//     pthread_mutex_t lock;
+//     pthread_mutex_init(&lock, NULL);
+//     usleep(1000000);
+//     int *x = (int*)arg;
+//     printf("count %d\n", count);
+//     if (count % 2)
+//     {
+//         printf("%d Iam odd thread \n", *x);
+//     }
+//     else
+//     {
+//         printf("%d Iam even thread \n", *x);
+//     }
+//     pthread_mutex_lock(&lock);
+//     count++;
+//     pthread_mutex_unlock(&lock);
+//     return (NULL);
+// }
+
+// int main()
+// {
+//     int i;
+//     int j;
+//     pthread_t *threads;
+
+//     threads = malloc(4 * sizeof(pthread_t));
+//     // Create threads
+//     for (int i = 0; i < 4; i++)
+//     {
+//         j = i + 1;
+//         pthread_create(&threads[i], NULL, thread_funct, &j);
+//         pthread_join(threads[i], NULL);
+//         pthread_detach(threads[i]);
+//     }
+//     // wait for threads
+//     // for (i = 0; i < 4; i++)
+//     // detach ressources
+//     printf("End threads\n");
+// }
+
+
+
 #include <pthread.h>
 #include <stdio.h>
-#include <unistd.h>
 #include <stdlib.h>
-void *myturn(void *arg){
-
-    int *ptr = malloc(sizeof(int));
-    *ptr = 5;
-   for (int i = 1; i < 9; i++)
-    {
-        sleep(1);
-        printf("my turn %d %d\n", i, *ptr);
-        (*ptr)++;
-    }
-    return (ptr);
-}
-
-void yourturn(){
-
-    for(int i = 1; i < 3; i++)
-    {
-        sleep(1);
-        printf("your turn %d \n", i);
-    }
-}
-
-int main()
+#include <string.h>
+#include <unistd.h>
+  
+pthread_t tid[2];
+int counter;
+  
+void* trythis(void* arg)
 {
-    int *result;
-    pthread_t new_thread;
-    // I can pass argument to thread
-    pthread_create(&new_thread, NULL, myturn, NULL);
-    yourturn();
-    // wait until the thread is done before we exit and get argument from thread
-    pthread_join(new_thread, (void *)&result);
-    printf("new_thread done: *result: %d\n", *result);
+    unsigned long i = 0;
+    counter += 1;
+    printf("\n Job %d has started\n", counter);
+  
+    for (i = 0; i < (0xFFFFFFFF); i++)
+        ;
+    printf("\n Job %d has finished\n", counter);
+  
+    return NULL;
+}
+  
+int main(void)
+{
+    int i = 0;
+    int error;
+  
+    while (i < 2) {
+        error = pthread_create(&(tid[i]), NULL, &trythis, NULL);
+        if (error != 0)
+            printf("\nThread can't be created : [%s]", strerror(error));
+        i++;
+    }
+    pthread_join(tid[0], NULL);
+    pthread_join(tid[1], NULL);
+  
+  
+    return 0;
 }
