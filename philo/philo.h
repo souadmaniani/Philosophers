@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <sys/time.h>
 typedef struct s_args
 {
     int	number_of_philosopher;
@@ -16,6 +17,7 @@ typedef struct s_philo
 {
 	int index;
 	t_args args;
+	pthread_mutex_t *locks;
 }			t_philo;
 
 int	ft_atoi(const char *str);

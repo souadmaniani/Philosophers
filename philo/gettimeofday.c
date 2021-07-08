@@ -28,17 +28,12 @@ int main() {
     gettimeofday(&start, NULL);
     loopFunc(NUM);
     gettimeofday(&end, NULL);
-
-    printf("loopFunc(%d)  time spent: %0.8f sec\n",
-           NUM, time_diff(&start, &end));
-
+    printf("loopFunc(%d)  time spent: %0.8f sec\n", NUM, time_diff(&start, &end));
 
     gettimeofday(&start, NULL);
     loopFunc(NUM2);
     gettimeofday(&end, NULL);
-
-    printf("loopFunc(%d) time spent: %0.8f sec\n",
-           NUM2, time_diff(&start, &end));
-
+    printf("loopFunc(%d) time spent: %0.8f sec\n", NUM2, time_diff(&start, &end));
+    
     exit(EXIT_SUCCESS);
 }
