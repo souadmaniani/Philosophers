@@ -10,7 +10,7 @@ typedef struct s_args
 	int	time_to_die;
 	int	time_to_eat;
 	int	time_to_sleep;
-	int	number_of_times_each_philosopher_must_eat;
+	double	number_of_times_each_philosopher_must_eat;
 }               t_args;
 
 typedef struct s_philo
