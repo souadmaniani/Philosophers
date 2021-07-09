@@ -17,6 +17,7 @@ typedef struct s_philo
 {
 	int index;
 	t_args args;
+	long last_eat;
 	pthread_mutex_t *locks;
 }			t_philo;
 

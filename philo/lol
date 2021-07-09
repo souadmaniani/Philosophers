@@ -1,0 +1,1095 @@
+swi3ida
+
+
+0 1 has taken a fork ===> 0 
+0 1 has taken a fork ===> 1
+0 1 is eating
+*******************************************************
+50 1 put down the fork ===> 0 
+50 1  put down the fork ===> 0 
+50 1 is sleeping
+50 0 has taken a fork ===> 1 
+50 0 has taken a fork ===> 0
+50 0 is eating
+*******************************************************
+61 1 is thinking
+101 0 put down the fork ===> 1 
+101 0  put down the fork ===> 1 
+101 0 is sleeping
+101 1 has taken a fork ===> 0 
+101 1 has taken a fork ===> 1
+101 1 is eating
+*******************************************************
+111 0 is thinking
+152 1 put down the fork ===> 0 
+152 1  put down the fork ===> 0 
+152 1 is sleeping
+152 0 has taken a fork ===> 1 
+152 0 has taken a fork ===> 0
+152 0 is eating
+*******************************************************
+162 1 is thinking
+204 0 put down the fork ===> 1 
+204 0  put down the fork ===> 1 
+204 0 is sleeping
+204 1 has taken a fork ===> 0 
+204 1 has taken a fork ===> 1
+204 1 is eating
+*******************************************************
+216 0 is thinking
+256 1 put down the fork ===> 0 
+256 1  put down the fork ===> 0 
+256 1 is sleeping
+256 0 has taken a fork ===> 1 
+256 0 has taken a fork ===> 0
+256 0 is eating
+*******************************************************
+266 1 is thinking
+308 0 put down the fork ===> 1 
+308 0  put down the fork ===> 1 
+308 0 is sleeping
+308 1 has taken a fork ===> 0 
+308 1 has taken a fork ===> 1
+308 1 is eating
+*******************************************************
+318 0 is thinking
+362 1 put down the fork ===> 0 
+362 1  put down the fork ===> 0 
+362 1 is sleeping
+362 0 has taken a fork ===> 1 
+362 0 has taken a fork ===> 0
+362 0 is eating
+*******************************************************
+373 1 is thinking
+412 0 put down the fork ===> 1 
+412 0  put down the fork ===> 1 
+412 0 is sleeping
+412 1 has taken a fork ===> 0 
+412 1 has taken a fork ===> 1
+412 1 is eating
+*******************************************************
+424 0 is thinking
+463 1 put down the fork ===> 0 
+463 1  put down the fork ===> 0 
+463 1 is sleeping
+463 0 has taken a fork ===> 1 
+463 0 has taken a fork ===> 0
+463 0 is eating
+*******************************************************
+474 1 is thinking
+516 0 put down the fork ===> 1 
+516 0  put down the fork ===> 1 
+516 0 is sleeping
+516 1 has taken a fork ===> 0 
+516 1 has taken a fork ===> 1
+516 1 is eating
+*******************************************************
+527 0 is thinking
+567 1 put down the fork ===> 0 
+567 1  put down the fork ===> 0 
+567 1 is sleeping
+567 0 has taken a fork ===> 1 
+567 0 has taken a fork ===> 0
+567 0 is eating
+*******************************************************
+578 1 is thinking
+618 0 put down the fork ===> 1 
+618 0  put down the fork ===> 1 
+618 0 is sleeping
+618 1 has taken a fork ===> 0 
+618 1 has taken a fork ===> 1
+618 1 is eating
+*******************************************************
+628 0 is thinking
+668 1 put down the fork ===> 0 
+668 1  put down the fork ===> 0 
+668 1 is sleeping
+668 0 has taken a fork ===> 1 
+668 0 has taken a fork ===> 0
+668 0 is eating
+*******************************************************
+680 1 is thinking
+723 0 put down the fork ===> 1 
+723 0  put down the fork ===> 1 
+723 0 is sleeping
+723 1 has taken a fork ===> 0 
+723 1 has taken a fork ===> 1
+723 1 is eating
+*******************************************************
+734 0 is thinking
+774 1 put down the fork ===> 0 
+774 1  put down the fork ===> 0 
+774 1 is sleeping
+774 0 has taken a fork ===> 1 
+774 0 has taken a fork ===> 0
+774 0 is eating
+*******************************************************
+785 1 is thinking
+825 0 put down the fork ===> 1 
+825 0  put down the fork ===> 1 
+825 0 is sleeping
+825 1 has taken a fork ===> 0 
+825 1 has taken a fork ===> 1
+825 1 is eating
+*******************************************************
+836 0 is thinking
+879 1 put down the fork ===> 0 
+879 1  put down the fork ===> 0 
+879 1 is sleeping
+879 0 has taken a fork ===> 1 
+879 0 has taken a fork ===> 0
+879 0 is eating
+*******************************************************
+890 1 is thinking
+931 0 put down the fork ===> 1 
+931 0  put down the fork ===> 1 
+931 0 is sleeping
+931 1 has taken a fork ===> 0 
+931 1 has taken a fork ===> 1
+931 1 is eating
+*******************************************************
+943 0 is thinking
+982 1 put down the fork ===> 0 
+982 1  put down the fork ===> 0 
+982 1 is sleeping
+982 0 has taken a fork ===> 1 
+982 0 has taken a fork ===> 0
+982 0 is eating
+*******************************************************
+992 1 is thinking
+1032 0 put down the fork ===> 1 
+1032 0  put down the fork ===> 1 
+1032 0 is sleeping
+1032 1 has taken a fork ===> 0 
+1032 1 has taken a fork ===> 1
+1032 1 is eating
+*******************************************************
+1044 0 is thinking
+1083 1 put down the fork ===> 0 
+1083 1  put down the fork ===> 0 
+1083 1 is sleeping
+1083 0 has taken a fork ===> 1 
+1083 0 has taken a fork ===> 0
+1083 0 is eating
+*******************************************************
+1093 1 is thinking
+1134 0 put down the fork ===> 1 
+1134 0  put down the fork ===> 1 
+1134 0 is sleeping
+1134 1 has taken a fork ===> 0 
+1134 1 has taken a fork ===> 1
+1134 1 is eating
+*******************************************************
+1145 0 is thinking
+1184 1 put down the fork ===> 0 
+1184 1  put down the fork ===> 0 
+1184 1 is sleeping
+1184 0 has taken a fork ===> 1 
+1184 0 has taken a fork ===> 0
+1184 0 is eating
+*******************************************************
+1195 1 is thinking
+1234 0 put down the fork ===> 1 
+1234 0  put down the fork ===> 1 
+1234 0 is sleeping
+1235 1 has taken a fork ===> 0 
+1235 1 has taken a fork ===> 1
+1235 1 is eating
+*******************************************************
+1246 0 is thinking
+1285 1 put down the fork ===> 0 
+1285 1  put down the fork ===> 0 
+1285 1 is sleeping
+1285 0 has taken a fork ===> 1 
+1285 0 has taken a fork ===> 0
+1285 0 is eating
+*******************************************************
+1295 1 is thinking
+1336 0 put down the fork ===> 1 
+1336 0  put down the fork ===> 1 
+1336 0 is sleeping
+1336 1 has taken a fork ===> 0 
+1336 1 has taken a fork ===> 1
+1336 1 is eating
+*******************************************************
+1348 0 is thinking
+1391 1 put down the fork ===> 0 
+1391 1  put down the fork ===> 0 
+1391 1 is sleeping
+1391 0 has taken a fork ===> 1 
+1391 0 has taken a fork ===> 0
+1391 0 is eating
+*******************************************************
+1402 1 is thinking
+1442 0 put down the fork ===> 1 
+1442 0  put down the fork ===> 1 
+1442 0 is sleeping
+1442 1 has taken a fork ===> 0 
+1442 1 has taken a fork ===> 1
+1442 1 is eating
+*******************************************************
+1453 0 is thinking
+1493 1 put down the fork ===> 0 
+1493 1  put down the fork ===> 0 
+1493 1 is sleeping
+1493 0 has taken a fork ===> 1 
+1493 0 has taken a fork ===> 0
+1493 0 is eating
+*******************************************************
+1504 1 is thinking
+1546 0 put down the fork ===> 1 
+1546 0  put down the fork ===> 1 
+1546 0 is sleeping
+1546 1 has taken a fork ===> 0 
+1546 1 has taken a fork ===> 1
+1546 1 is eating
+*******************************************************
+1557 0 is thinking
+1597 1 put down the fork ===> 0 
+1597 1  put down the fork ===> 0 
+1597 1 is sleeping
+1597 0 has taken a fork ===> 1 
+1597 0 has taken a fork ===> 0
+1597 0 is eating
+*******************************************************
+1608 1 is thinking
+1647 0 put down the fork ===> 1 
+1647 0  put down the fork ===> 1 
+1647 0 is sleeping
+1647 1 has taken a fork ===> 0 
+1647 1 has taken a fork ===> 1
+1647 1 is eating
+*******************************************************
+1658 0 is thinking
+1697 1 put down the fork ===> 0 
+1697 1  put down the fork ===> 0 
+1697 1 is sleeping
+1697 0 has taken a fork ===> 1 
+1697 0 has taken a fork ===> 0
+1697 0 is eating
+*******************************************************
+1708 1 is thinking
+1747 0 put down the fork ===> 1 
+1747 0  put down the fork ===> 1 
+1747 0 is sleeping
+1747 1 has taken a fork ===> 0 
+1747 1 has taken a fork ===> 1
+1747 1 is eating
+*******************************************************
+1758 0 is thinking
+1798 1 put down the fork ===> 0 
+1798 1  put down the fork ===> 0 
+1798 1 is sleeping
+1798 0 has taken a fork ===> 1 
+1798 0 has taken a fork ===> 0
+1798 0 is eating
+*******************************************************
+1808 1 is thinking
+1848 0 put down the fork ===> 1 
+1848 0  put down the fork ===> 1 
+1848 0 is sleeping
+1848 1 has taken a fork ===> 0 
+1848 1 has taken a fork ===> 1
+1848 1 is eating
+*******************************************************
+1860 0 is thinking
+1901 1 put down the fork ===> 0 
+1901 1  put down the fork ===> 0 
+1901 1 is sleeping
+1901 0 has taken a fork ===> 1 
+1901 0 has taken a fork ===> 0
+1901 0 is eating
+*******************************************************
+1913 1 is thinking
+1951 0 put down the fork ===> 1 
+1951 0  put down the fork ===> 1 
+1951 0 is sleeping
+1951 1 has taken a fork ===> 0 
+1951 1 has taken a fork ===> 1
+1951 1 is eating
+*******************************************************
+1962 0 is thinking
+2004 1 put down the fork ===> 0 
+2004 1  put down the fork ===> 0 
+2004 1 is sleeping
+2004 0 has taken a fork ===> 1 
+2004 0 has taken a fork ===> 0
+2004 0 is eating
+*******************************************************
+2015 1 is thinking
+2055 0 put down the fork ===> 1 
+2055 0  put down the fork ===> 1 
+2055 0 is sleeping
+2055 1 has taken a fork ===> 0 
+2055 1 has taken a fork ===> 1
+2055 1 is eating
+*******************************************************
+2066 0 is thinking
+2106 1 put down the fork ===> 0 
+2106 1  put down the fork ===> 0 
+2106 1 is sleeping
+2106 0 has taken a fork ===> 1 
+2106 0 has taken a fork ===> 0
+2106 0 is eating
+*******************************************************
+2116 1 is thinking
+2159 0 put down the fork ===> 1 
+2159 0  put down the fork ===> 1 
+2159 0 is sleeping
+2159 1 has taken a fork ===> 0 
+2159 1 has taken a fork ===> 1
+2159 1 is eating
+*******************************************************
+2171 0 is thinking
+2211 1 put down the fork ===> 0 
+2211 1  put down the fork ===> 0 
+2211 1 is sleeping
+2211 0 has taken a fork ===> 1 
+2211 0 has taken a fork ===> 0
+2211 0 is eating
+*******************************************************
+2223 1 is thinking
+2262 0 put down the fork ===> 1 
+2262 0  put down the fork ===> 1 
+2262 0 is sleeping
+2262 1 has taken a fork ===> 0 
+2262 1 has taken a fork ===> 1
+2262 1 is eating
+*******************************************************
+2273 0 is thinking
+2313 1 put down the fork ===> 0 
+2313 1  put down the fork ===> 0 
+2313 1 is sleeping
+2313 0 has taken a fork ===> 1 
+2313 0 has taken a fork ===> 0
+2313 0 is eating
+*******************************************************
+2324 1 is thinking
+2366 0 put down the fork ===> 1 
+2366 0  put down the fork ===> 1 
+2366 0 is sleeping
+2366 1 has taken a fork ===> 0 
+2366 1 has taken a fork ===> 1
+2366 1 is eating
+*******************************************************
+2379 0 is thinking
+2416 1 put down the fork ===> 0 
+2416 1  put down the fork ===> 0 
+2416 1 is sleeping
+2416 0 has taken a fork ===> 1 
+2416 0 has taken a fork ===> 0
+2416 0 is eating
+*******************************************************
+2427 1 is thinking
+2467 0 put down the fork ===> 1 
+2467 0  put down the fork ===> 1 
+2467 0 is sleeping
+2467 1 has taken a fork ===> 0 
+2467 1 has taken a fork ===> 1
+2467 1 is eating
+*******************************************************
+2479 0 is thinking
+2518 1 put down the fork ===> 0 
+2518 1  put down the fork ===> 0 
+2518 1 is sleeping
+2518 0 has taken a fork ===> 1 
+2518 0 has taken a fork ===> 0
+2518 0 is eating
+*******************************************************
+2529 1 is thinking
+2571 0 put down the fork ===> 1 
+2571 0  put down the fork ===> 1 
+2571 0 is sleeping
+2571 1 has taken a fork ===> 0 
+2571 1 has taken a fork ===> 1
+2571 1 is eating
+*******************************************************
+2581 0 is thinking
+2622 1 put down the fork ===> 0 
+2622 1  put down the fork ===> 0 
+2622 1 is sleeping
+2622 0 has taken a fork ===> 1 
+2622 0 has taken a fork ===> 0
+2622 0 is eating
+*******************************************************
+2634 1 is thinking
+2672 0 put down the fork ===> 1 
+2672 0  put down the fork ===> 1 
+2672 0 is sleeping
+2672 1 has taken a fork ===> 0 
+2672 1 has taken a fork ===> 1
+2672 1 is eating
+*******************************************************
+2683 0 is thinking
+2723 1 put down the fork ===> 0 
+2723 1  put down the fork ===> 0 
+2723 1 is sleeping
+2723 0 has taken a fork ===> 1 
+2723 0 has taken a fork ===> 0
+2723 0 is eating
+*******************************************************
+2734 1 is thinking
+2774 0 put down the fork ===> 1 
+2774 0  put down the fork ===> 1 
+2774 0 is sleeping
+2774 1 has taken a fork ===> 0 
+2774 1 has taken a fork ===> 1
+2774 1 is eating
+*******************************************************
+2785 0 is thinking
+2826 1 put down the fork ===> 0 
+2826 1  put down the fork ===> 0 
+2826 1 is sleeping
+2826 0 has taken a fork ===> 1 
+2826 0 has taken a fork ===> 0
+2826 0 is eating
+*******************************************************
+2837 1 is thinking
+2877 0 put down the fork ===> 1 
+2877 0  put down the fork ===> 1 
+2877 0 is sleeping
+2877 1 has taken a fork ===> 0 
+2877 1 has taken a fork ===> 1
+2877 1 is eating
+*******************************************************
+2888 0 is thinking
+2927 1 put down the fork ===> 0 
+2927 1  put down the fork ===> 0 
+2927 1 is sleeping
+2927 0 has taken a fork ===> 1 
+2927 0 has taken a fork ===> 0
+2927 0 is eating
+*******************************************************
+2938 1 is thinking
+2979 0 put down the fork ===> 1 
+2979 0  put down the fork ===> 1 
+2979 0 is sleeping
+2979 1 has taken a fork ===> 0 
+2979 1 has taken a fork ===> 1
+2979 1 is eating
+*******************************************************
+2991 0 is thinking
+3034 1 put down the fork ===> 0 
+3034 1  put down the fork ===> 0 
+3034 1 is sleeping
+3034 0 has taken a fork ===> 1 
+3034 0 has taken a fork ===> 0
+3034 0 is eating
+*******************************************************
+3044 1 is thinking
+3084 0 put down the fork ===> 1 
+3084 0  put down the fork ===> 1 
+3084 0 is sleeping
+3084 1 has taken a fork ===> 0 
+3084 1 has taken a fork ===> 1
+3084 1 is eating
+*******************************************************
+3095 0 is thinking
+3135 1 put down the fork ===> 0 
+3135 1  put down the fork ===> 0 
+3135 1 is sleeping
+3135 0 has taken a fork ===> 1 
+3135 0 has taken a fork ===> 0
+3135 0 is eating
+*******************************************************
+3145 1 is thinking
+3186 0 put down the fork ===> 1 
+3186 0  put down the fork ===> 1 
+3186 0 is sleeping
+3186 1 has taken a fork ===> 0 
+3186 1 has taken a fork ===> 1
+3186 1 is eating
+*******************************************************
+3197 0 is thinking
+3236 1 put down the fork ===> 0 
+3236 1  put down the fork ===> 0 
+3236 1 is sleeping
+3236 0 has taken a fork ===> 1 
+3236 0 has taken a fork ===> 0
+3236 0 is eating
+*******************************************************
+3247 1 is thinking
+3290 0 put down the fork ===> 1 
+3290 0  put down the fork ===> 1 
+3290 0 is sleeping
+3290 1 has taken a fork ===> 0 
+3290 1 has taken a fork ===> 1
+3290 1 is eating
+*******************************************************
+3300 0 is thinking
+3340 1 put down the fork ===> 0 
+3340 1  put down the fork ===> 0 
+3340 1 is sleeping
+3340 0 has taken a fork ===> 1 
+3340 0 has taken a fork ===> 0
+3340 0 is eating
+*******************************************************
+3350 1 is thinking
+3391 0 put down the fork ===> 1 
+3391 0  put down the fork ===> 1 
+3391 0 is sleeping
+3391 1 has taken a fork ===> 0 
+3391 1 has taken a fork ===> 1
+3391 1 is eating
+*******************************************************
+3404 0 is thinking
+3442 1 put down the fork ===> 0 
+3442 1  put down the fork ===> 0 
+3442 1 is sleeping
+3442 0 has taken a fork ===> 1 
+3442 0 has taken a fork ===> 0
+3442 0 is eating
+*******************************************************
+3453 1 is thinking
+3493 0 put down the fork ===> 1 
+3493 0  put down the fork ===> 1 
+3493 0 is sleeping
+3493 1 has taken a fork ===> 0 
+3493 1 has taken a fork ===> 1
+3493 1 is eating
+*******************************************************
+3504 0 is thinking
+3543 1 put down the fork ===> 0 
+3543 1  put down the fork ===> 0 
+3543 1 is sleeping
+3543 0 has taken a fork ===> 1 
+3543 0 has taken a fork ===> 0
+3543 0 is eating
+*******************************************************
+3554 1 is thinking
+3596 0 put down the fork ===> 1 
+3596 0  put down the fork ===> 1 
+3596 0 is sleeping
+3596 1 has taken a fork ===> 0 
+3596 1 has taken a fork ===> 1
+3596 1 is eating
+*******************************************************
+3609 0 is thinking
+3646 1 put down the fork ===> 0 
+3646 1  put down the fork ===> 0 
+3646 1 is sleeping
+3646 0 has taken a fork ===> 1 
+3646 0 has taken a fork ===> 0
+3646 0 is eating
+*******************************************************
+3656 1 is thinking
+3697 0 put down the fork ===> 1 
+3697 0  put down the fork ===> 1 
+3697 0 is sleeping
+3697 1 has taken a fork ===> 0 
+3697 1 has taken a fork ===> 1
+3697 1 is eating
+*******************************************************
+3708 0 is thinking
+3748 1 put down the fork ===> 0 
+3748 1  put down the fork ===> 0 
+3748 1 is sleeping
+3748 0 has taken a fork ===> 1 
+3748 0 has taken a fork ===> 0
+3748 0 is eating
+*******************************************************
+3759 1 is thinking
+3802 0 put down the fork ===> 1 
+3802 0  put down the fork ===> 1 
+3802 0 is sleeping
+3802 1 has taken a fork ===> 0 
+3802 1 has taken a fork ===> 1
+3802 1 is eating
+*******************************************************
+3812 0 is thinking
+3855 1 put down the fork ===> 0 
+3855 1  put down the fork ===> 0 
+3855 1 is sleeping
+3855 0 has taken a fork ===> 1 
+3855 0 has taken a fork ===> 0
+3855 0 is eating
+*******************************************************
+3866 1 is thinking
+3908 0 put down the fork ===> 1 
+3908 0  put down the fork ===> 1 
+3908 0 is sleeping
+3908 1 has taken a fork ===> 0 
+3908 1 has taken a fork ===> 1
+3908 1 is eating
+*******************************************************
+3919 0 is thinking
+3959 1 put down the fork ===> 0 
+3959 1  put down the fork ===> 0 
+3959 1 is sleeping
+3959 0 has taken a fork ===> 1 
+3959 0 has taken a fork ===> 0
+3959 0 is eating
+*******************************************************
+3971 1 is thinking
+4010 0 put down the fork ===> 1 
+4010 0  put down the fork ===> 1 
+4010 0 is sleeping
+4010 1 has taken a fork ===> 0 
+4010 1 has taken a fork ===> 1
+4010 1 is eating
+*******************************************************
+4021 0 is thinking
+4061 1 put down the fork ===> 0 
+4061 1  put down the fork ===> 0 
+4061 1 is sleeping
+4061 0 has taken a fork ===> 1 
+4061 0 has taken a fork ===> 0
+4061 0 is eating
+*******************************************************
+4071 1 is thinking
+4111 0 put down the fork ===> 1 
+4111 0  put down the fork ===> 1 
+4111 0 is sleeping
+4111 1 has taken a fork ===> 0 
+4111 1 has taken a fork ===> 1
+4111 1 is eating
+*******************************************************
+4122 0 is thinking
+4164 1 put down the fork ===> 0 
+4164 1  put down the fork ===> 0 
+4164 1 is sleeping
+4164 0 has taken a fork ===> 1 
+4164 0 has taken a fork ===> 0
+4164 0 is eating
+*******************************************************
+4175 1 is thinking
+4215 0 put down the fork ===> 1 
+4215 0  put down the fork ===> 1 
+4215 0 is sleeping
+4215 1 has taken a fork ===> 0 
+4215 1 has taken a fork ===> 1
+4215 1 is eating
+*******************************************************
+4225 0 is thinking
+4265 1 put down the fork ===> 0 
+4265 1  put down the fork ===> 0 
+4265 1 is sleeping
+4265 0 has taken a fork ===> 1 
+4265 0 has taken a fork ===> 0
+4265 0 is eating
+*******************************************************
+4276 1 is thinking
+4315 0 put down the fork ===> 1 
+4315 0  put down the fork ===> 1 
+4315 0 is sleeping
+4315 1 has taken a fork ===> 0 
+4315 1 has taken a fork ===> 1
+4315 1 is eating
+*******************************************************
+4326 0 is thinking
+4365 1 put down the fork ===> 0 
+4365 1  put down the fork ===> 0 
+4365 1 is sleeping
+4365 0 has taken a fork ===> 1 
+4365 0 has taken a fork ===> 0
+4365 0 is eating
+*******************************************************
+4378 1 is thinking
+4420 0 put down the fork ===> 1 
+4420 0  put down the fork ===> 1 
+4420 0 is sleeping
+4420 1 has taken a fork ===> 0 
+4420 1 has taken a fork ===> 1
+4420 1 is eating
+*******************************************************
+4431 0 is thinking
+4471 1 put down the fork ===> 0 
+4471 1  put down the fork ===> 0 
+4471 1 is sleeping
+4471 0 has taken a fork ===> 1 
+4471 0 has taken a fork ===> 0
+4471 0 is eating
+*******************************************************
+4482 1 is thinking
+4526 0 put down the fork ===> 1 
+4526 0  put down the fork ===> 1 
+4526 0 is sleeping
+4526 1 has taken a fork ===> 0 
+4526 1 has taken a fork ===> 1
+4526 1 is eating
+*******************************************************
+4537 0 is thinking
+4577 1 put down the fork ===> 0 
+4577 1  put down the fork ===> 0 
+4577 1 is sleeping
+4577 0 has taken a fork ===> 1 
+4577 0 has taken a fork ===> 0
+4577 0 is eating
+*******************************************************
+4588 1 is thinking
+4628 0 put down the fork ===> 1 
+4628 0  put down the fork ===> 1 
+4628 0 is sleeping
+4628 1 has taken a fork ===> 0 
+4628 1 has taken a fork ===> 1
+4628 1 is eating
+*******************************************************
+4639 0 is thinking
+4679 1 put down the fork ===> 0 
+4679 1  put down the fork ===> 0 
+4679 1 is sleeping
+4679 0 has taken a fork ===> 1 
+4679 0 has taken a fork ===> 0
+4679 0 is eating
+*******************************************************
+4690 1 is thinking
+4729 0 put down the fork ===> 1 
+4729 0  put down the fork ===> 1 
+4729 0 is sleeping
+4729 1 has taken a fork ===> 0 
+4729 1 has taken a fork ===> 1
+4729 1 is eating
+*******************************************************
+4740 0 is thinking
+4783 1 put down the fork ===> 0 
+4783 1  put down the fork ===> 0 
+4783 1 is sleeping
+4783 0 has taken a fork ===> 1 
+4783 0 has taken a fork ===> 0
+4783 0 is eating
+*******************************************************
+4796 1 is thinking
+4833 0 put down the fork ===> 1 
+4833 0  put down the fork ===> 1 
+4833 0 is sleeping
+4833 1 has taken a fork ===> 0 
+4833 1 has taken a fork ===> 1
+4833 1 is eating
+*******************************************************
+4843 0 is thinking
+4886 1 put down the fork ===> 0 
+4886 1  put down the fork ===> 0 
+4886 1 is sleeping
+4886 0 has taken a fork ===> 1 
+4886 0 has taken a fork ===> 0
+4886 0 is eating
+*******************************************************
+4899 1 is thinking
+4937 0 put down the fork ===> 1 
+4937 0  put down the fork ===> 1 
+4937 0 is sleeping
+4937 1 has taken a fork ===> 0 
+4937 1 has taken a fork ===> 1
+4937 1 is eating
+*******************************************************
+4948 0 is thinking
+4988 1 put down the fork ===> 0 
+4988 1  put down the fork ===> 0 
+4988 1 is sleeping
+4988 0 has taken a fork ===> 1 
+4988 0 has taken a fork ===> 0
+4988 0 is eating
+*******************************************************
+5001 1 is thinking
+5039 0 put down the fork ===> 1 
+5039 0  put down the fork ===> 1 
+5039 0 is sleeping
+5039 1 has taken a fork ===> 0 
+5039 1 has taken a fork ===> 1
+5039 1 is eating
+*******************************************************
+5050 0 is thinking
+5090 1 put down the fork ===> 0 
+5090 1  put down the fork ===> 0 
+5090 1 is sleeping
+5090 0 has taken a fork ===> 1 
+5090 0 has taken a fork ===> 0
+5090 0 is eating
+*******************************************************
+5101 1 is thinking
+5141 0 put down the fork ===> 1 
+5141 0  put down the fork ===> 1 
+5141 0 is sleeping
+5141 1 has taken a fork ===> 0 
+5141 1 has taken a fork ===> 1
+5141 1 is eating
+*******************************************************
+5152 0 is thinking
+5192 1 put down the fork ===> 0 
+5192 1  put down the fork ===> 0 
+5192 1 is sleeping
+5192 0 has taken a fork ===> 1 
+5192 0 has taken a fork ===> 0
+5192 0 is eating
+*******************************************************
+5203 1 is thinking
+5243 0 put down the fork ===> 1 
+5243 0  put down the fork ===> 1 
+5243 0 is sleeping
+5243 1 has taken a fork ===> 0 
+5243 1 has taken a fork ===> 1
+5243 1 is eating
+*******************************************************
+5254 0 is thinking
+5295 1 put down the fork ===> 0 
+5295 1  put down the fork ===> 0 
+5295 1 is sleeping
+5295 0 has taken a fork ===> 1 
+5295 0 has taken a fork ===> 0
+5295 0 is eating
+*******************************************************
+5308 1 is thinking
+5346 0 put down the fork ===> 1 
+5346 0  put down the fork ===> 1 
+5346 0 is sleeping
+5346 1 has taken a fork ===> 0 
+5346 1 has taken a fork ===> 1
+5346 1 is eating
+*******************************************************
+5358 0 is thinking
+5399 1 put down the fork ===> 0 
+5399 1  put down the fork ===> 0 
+5399 1 is sleeping
+5399 0 has taken a fork ===> 1 
+5399 0 has taken a fork ===> 0
+5399 0 is eating
+*******************************************************
+5409 1 is thinking
+5450 0 put down the fork ===> 1 
+5450 0  put down the fork ===> 1 
+5450 0 is sleeping
+5450 1 has taken a fork ===> 0 
+5450 1 has taken a fork ===> 1
+5450 1 is eating
+*******************************************************
+5461 0 is thinking
+5500 1 put down the fork ===> 0 
+5500 1  put down the fork ===> 0 
+5500 1 is sleeping
+5500 0 has taken a fork ===> 1 
+5500 0 has taken a fork ===> 0
+5500 0 is eating
+*******************************************************
+5511 1 is thinking
+5554 0 put down the fork ===> 1 
+5554 0  put down the fork ===> 1 
+5554 0 is sleeping
+5554 1 has taken a fork ===> 0 
+5554 1 has taken a fork ===> 1
+5554 1 is eating
+*******************************************************
+5567 0 is thinking
+5604 1 put down the fork ===> 0 
+5604 1  put down the fork ===> 0 
+5604 1 is sleeping
+5604 0 has taken a fork ===> 1 
+5604 0 has taken a fork ===> 0
+5604 0 is eating
+*******************************************************
+5615 1 is thinking
+5654 0 put down the fork ===> 1 
+5654 0  put down the fork ===> 1 
+5654 0 is sleeping
+5654 1 has taken a fork ===> 0 
+5654 1 has taken a fork ===> 1
+5654 1 is eating
+*******************************************************
+5665 0 is thinking
+5705 1 put down the fork ===> 0 
+5705 1  put down the fork ===> 0 
+5705 1 is sleeping
+5705 0 has taken a fork ===> 1 
+5705 0 has taken a fork ===> 0
+5705 0 is eating
+*******************************************************
+5717 1 is thinking
+5756 0 put down the fork ===> 1 
+5756 0  put down the fork ===> 1 
+5756 0 is sleeping
+5756 1 has taken a fork ===> 0 
+5756 1 has taken a fork ===> 1
+5756 1 is eating
+*******************************************************
+5767 0 is thinking
+5807 1 put down the fork ===> 0 
+5807 1  put down the fork ===> 0 
+5807 1 is sleeping
+5807 0 has taken a fork ===> 1 
+5807 0 has taken a fork ===> 0
+5807 0 is eating
+*******************************************************
+5820 1 is thinking
+5858 0 put down the fork ===> 1 
+5858 0  put down the fork ===> 1 
+5858 0 is sleeping
+5858 1 has taken a fork ===> 0 
+5858 1 has taken a fork ===> 1
+5858 1 is eating
+*******************************************************
+5868 0 is thinking
+5909 1 put down the fork ===> 0 
+5909 1  put down the fork ===> 0 
+5909 1 is sleeping
+5909 0 has taken a fork ===> 1 
+5909 0 has taken a fork ===> 0
+5909 0 is eating
+*******************************************************
+5919 1 is thinking
+5959 0 put down the fork ===> 1 
+5959 0  put down the fork ===> 1 
+5959 0 is sleeping
+5959 1 has taken a fork ===> 0 
+5959 1 has taken a fork ===> 1
+5959 1 is eating
+*******************************************************
+5971 0 is thinking
+6010 1 put down the fork ===> 0 
+6010 1  put down the fork ===> 0 
+6010 1 is sleeping
+6010 0 has taken a fork ===> 1 
+6010 0 has taken a fork ===> 0
+6010 0 is eating
+*******************************************************
+6020 1 is thinking
+6063 1 has taken a fork ===> 0 
+6063 1 has taken a fork ===> 1
+6063 1 is eating
+*******************************************************
+6063 0 put down the fork ===> 1 
+6063 0  put down the fork ===> 1 
+6063 0 is sleeping
+6074 0 is thinking
+6114 1 put down the fork ===> 0 
+6114 1  put down the fork ===> 0 
+6114 1 is sleeping
+6114 0 has taken a fork ===> 1 
+6114 0 has taken a fork ===> 0
+6114 0 is eating
+*******************************************************
+6125 1 is thinking
+6165 0 put down the fork ===> 1 
+6165 0  put down the fork ===> 1 
+6165 0 is sleeping
+6165 1 has taken a fork ===> 0 
+6165 1 has taken a fork ===> 1
+6165 1 is eating
+*******************************************************
+6176 0 is thinking
+6216 1 put down the fork ===> 0 
+6216 1  put down the fork ===> 0 
+6216 1 is sleeping
+6216 0 has taken a fork ===> 1 
+6216 0 has taken a fork ===> 0
+6216 0 is eating
+*******************************************************
+6226 1 is thinking
+6266 0 put down the fork ===> 1 
+6266 0  put down the fork ===> 1 
+6266 0 is sleeping
+6266 1 has taken a fork ===> 0 
+6266 1 has taken a fork ===> 1
+6266 1 is eating
+*******************************************************
+6276 0 is thinking
+6318 1 put down the fork ===> 0 
+6318 1  put down the fork ===> 0 
+6318 1 is sleeping
+6318 0 has taken a fork ===> 1 
+6318 0 has taken a fork ===> 0
+6318 0 is eating
+*******************************************************
+6328 1 is thinking
+6371 0 put down the fork ===> 1 
+6371 0  put down the fork ===> 1 
+6371 0 is sleeping
+6371 1 has taken a fork ===> 0 
+6371 1 has taken a fork ===> 1
+6371 1 is eating
+*******************************************************
+6383 0 is thinking
+6426 1 put down the fork ===> 0 
+6426 1  put down the fork ===> 0 
+6426 1 is sleeping
+6426 0 has taken a fork ===> 1 
+6426 0 has taken a fork ===> 0
+6426 0 is eating
+*******************************************************
+6436 1 is thinking
+6479 0 put down the fork ===> 1 
+6479 0  put down the fork ===> 1 
+6479 0 is sleeping
+6479 1 has taken a fork ===> 0 
+6479 1 has taken a fork ===> 1
+6479 1 is eating
+*******************************************************
+6490 0 is thinking
+6532 1 put down the fork ===> 0 
+6532 1  put down the fork ===> 0 
+6532 1 is sleeping
+6532 0 has taken a fork ===> 1 
+6532 0 has taken a fork ===> 0
+6532 0 is eating
+*******************************************************
+6543 1 is thinking
+6583 0 put down the fork ===> 1 
+6583 0  put down the fork ===> 1 
+6583 0 is sleeping
+6583 1 has taken a fork ===> 0 
+6583 1 has taken a fork ===> 1
+6583 1 is eating
+*******************************************************
+6593 0 is thinking
+6633 1 put down the fork ===> 0 
+6633 1  put down the fork ===> 0 
+6633 1 is sleeping
+6633 0 has taken a fork ===> 1 
+6633 0 has taken a fork ===> 0
+6633 0 is eating
+*******************************************************
+6643 1 is thinking
+6685 0 put down the fork ===> 1 
+6685 0  put down the fork ===> 1 
+6685 0 is sleeping
+6685 1 has taken a fork ===> 0 
+6685 1 has taken a fork ===> 1
+6685 1 is eating
+*******************************************************
+6698 0 is thinking
+6736 1 put down the fork ===> 0 
+6736 1  put down the fork ===> 0 
+6736 1 is sleeping
+6736 0 has taken a fork ===> 1 
+6736 0 has taken a fork ===> 0
+6736 0 is eating
+*******************************************************
+6747 1 is thinking
+6787 0 put down the fork ===> 1 
+6787 0  put down the fork ===> 1 
+6787 0 is sleeping
+6787 1 has taken a fork ===> 0 
+6787 1 has taken a fork ===> 1
+6787 1 is eating
+*******************************************************
+6797 0 is thinking
+6837 1 put down the fork ===> 0 
+6837 1  put down the fork ===> 0 
+6837 1 is sleeping
+6837 0 has taken a fork ===> 1 
+6837 0 has taken a fork ===> 0
+6837 0 is eating
+*******************************************************
+6848 1 is thinking
+6888 0 put down the fork ===> 1 
+6888 0  put down the fork ===> 1 
+6888 0 is sleeping
+6888 1 has taken a fork ===> 0 
+6888 1 has taken a fork ===> 1
+6888 1 is eating
+*******************************************************
+6899 0 is thinking
+6940 1 put down the fork ===> 0 
+6940 1  put down the fork ===> 0 
+6940 1 is sleeping
+6940 0 has taken a fork ===> 1 
+6940 0 has taken a fork ===> 0
+6940 0 is eating
+*******************************************************
+6951 1 is thinking
+6991 0 put down the fork ===> 1 
+6991 0  put down the fork ===> 1 
+6991 0 is sleeping
+6991 1 has taken a fork ===> 0 
+6991 1 has taken a fork ===> 1
+6991 1 is eating
+*******************************************************
+7002 0 is thin
