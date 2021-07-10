@@ -129,6 +129,8 @@ int main(int argc, char *argv[])
 			}
 		}
 		gettimeofday(&start, NULL);
+		pthread_mutex_t lock;
+		pthread_mutex_init(&lock, NULL);
 		while (1)
 		{
 			for (int i = 0; i < args.number_of_philosopher; i++)
@@ -138,8 +140,9 @@ int main(int argc, char *argv[])
 					printf("%ld %d \e[1;31m died \e[0m\n", time_diff(&start), philos[i].index);
 					return (1);
 				}
+			usleep(500);
 			}
-		}
+		}		
 	}
 	else
 		printf("Error args\n");

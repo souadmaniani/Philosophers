@@ -4,7 +4,7 @@ OBJ		=	main.o ft_atoi.o
 
 all		:	$(NAME)
 $(NAME) : $(SRC)
-			gcc -Wall -Wextra -Werror $(SRC) -o $(NAME) -fsanitize=address
+			gcc -Wall -Wextra -Werror $(SRC) -o $(NAME)  -pthread
 clean	:
 		rm -f $(NAME)
 fclean	: clean	
