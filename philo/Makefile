@@ -4,7 +4,7 @@ OBJ		=	main.o ft_atoi.o
 
 all		:	$(NAME)
 $(NAME) : $(SRC)
-			gcc -Wall -Wextra -Werror $(SRC) -o $(NAME)
+			gcc -Wall -Wextra -Werror $(SRC) -o $(NAME) -fsanitize=address
 clean	:
 		rm -f $(NAME)
 fclean	: clean	

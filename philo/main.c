@@ -22,19 +22,18 @@ long last_eat(struct timeval *start, struct timeval *end)
 {
 	 return (end->tv_sec - start->tv_sec)*1e3 + 1e-3*(end->tv_usec - start->tv_usec);
 }
-
+// ./philo 5 100 200 200  
 int number_eat = 0;
 void				*philo_actions(void *arg)
 {
 	t_philo *philo = (t_philo *)arg;
+	// int *return_value = (int *)malloc(sizeof(int));
 	// khass lli even yn3asss f depart (0, 2, 4)  
 	if ( !( philo->index % 2 ) )
-		usleep(10);
+		usleep(100);
 	// time reference 
 	struct timeval start;
 	long time_now;
-	pthread_mutex_t lock;
-	pthread_mutex_init(&lock, NULL);
 	gettimeofday(&start, NULL);
 	while (1)
 	{
@@ -42,14 +41,21 @@ void				*philo_actions(void *arg)
 		int left = (philo->index + philo->args.number_of_philosopher - 1) % (philo->args.number_of_philosopher );
 		/*********************************** EAT **************************************************************/
 		pthread_mutex_lock(&philo->locks[left]);
+		pthread_mutex_t lock;
+		pthread_mutex_init(&lock, NULL);
 		time_now = time_diff(&start);
-		// does not start eating yet OR daz time to die after last meal 
+		// does not start eating yet OR depass time to die after last meal 
 		if ((time_now >= philo->args.time_to_die && !philo->last_eat ) || (time_now - philo->last_eat) >= philo->args.time_to_die)
 		{
-			printf("time now: %ld ms , %d \e[1;31m died \e[0m\n", time_now, philo->index);
-			exit(1);
+			philo->last_eat = -1;
+			return (NULL);
 		}
-		printf("time_now: %ld %ld %d has taken a fork\n",time_now, time_diff(&start), philo->index);
+		if ((time_now >= philo->args.time_to_die && !philo->last_eat ) || (time_now - philo->last_eat) >= philo->args.time_to_die)
+		{
+			printf("philo: %d\n", philo->index);
+			usleep(500);
+		}
+		printf("%ld %d has taken a fork\n", time_diff(&start), philo->index);
 		pthread_mutex_lock(&philo->locks[philo->index]);
 		printf("%ld %d has taken a fork\n", time_diff(&start), philo->index);
 		printf("%ld %d is eating\n", time_diff(&start), philo->index);
@@ -65,7 +71,6 @@ void				*philo_actions(void *arg)
 		/****************************************************************************************************/
 
 		/***************************** TIME OF EATING AND UNLOCK FORKS **************************************/
-		time_now = time_diff(&start);
 		if (philo->args.time_to_eat > philo->args.time_to_die)
 			usleep(philo->args.time_to_die * 1e3);
 		else
@@ -123,11 +128,18 @@ int main(int argc, char *argv[])
 				return (0);
 			}
 		}
-		for (int i = 0; i < args.number_of_philosopher; i++)
-			pthread_join(threads[i], NULL);
-		// if (check_number_time_eating(philos))
-		// 	exit(1);
-		printf("main thread\n");
+		gettimeofday(&start, NULL);
+		while (1)
+		{
+			for (int i = 0; i < args.number_of_philosopher; i++)
+			{
+				if (philos[i].last_eat == -1)
+				{
+					printf("%ld %d \e[1;31m died \e[0m\n", time_diff(&start), philos[i].index);
+					return (1);
+				}
+			}
+		}
 	}
 	else
 		printf("Error args\n");
