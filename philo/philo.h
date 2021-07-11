@@ -11,6 +11,7 @@ typedef struct s_args
 	int	time_to_eat;
 	int	time_to_sleep;
 	double	number_of_times_each_philosopher_must_eat;
+	pthread_mutex_t number_eat;
 }               t_args;
 
 typedef struct s_philo
