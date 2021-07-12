@@ -1,6 +1,6 @@
 NAME	=	philo
-SRC		=	main.c ft_atoi.c utils.c
-OBJ		=	main.o ft_atoi.o utils.o
+SRC		=	main.c ft_atoi.c utils.c philo_action.c
+OBJ		=	main.o ft_atoi.o utils.o philo_action.o
 
 all		:	$(NAME)
 $(NAME) : $(SRC)

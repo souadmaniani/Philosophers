@@ -6,11 +6,11 @@
 #include <sys/time.h>
 typedef struct s_args
 {
-    int	number_of_philosopher;
+    int	nb_philos;
 	int	time_to_die;
 	int	time_to_eat;
 	int	time_to_sleep;
-	double	number_of_times_each_philosopher_must_eat;
+	double	nb_must_eat;
 	pthread_mutex_t number_eat;
 	int *counter;
 }               t_args;
@@ -27,3 +27,4 @@ int	ft_atoi(const char *str);
 long time_diff(struct timeval *start);
 long time_to_ms(struct timeval *time);
 long last_eat(struct timeval *start, struct timeval *end);
+void				*philo_actions(void *arg);
