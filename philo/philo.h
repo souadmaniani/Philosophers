@@ -4,6 +4,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/time.h>
+
 typedef struct s_args
 {
     int	nb_philos;
@@ -13,6 +14,7 @@ typedef struct s_args
 	double	nb_must_eat;
 	pthread_mutex_t number_eat;
 	int *counter;
+	int *dead;
 }               t_args;
 
 typedef struct s_philo

@@ -3,10 +3,9 @@
 int check_death(t_philo *philos, t_args			args)
 {
 	struct timeval start;
-	gettimeofday(&start, NULL);
-	int dead;
 
-	dead = 0;
+	gettimeofday(&start, NULL);
+	printf("%d\n\n\n", *(args.dead));
 	while (1)
 	{
 		for (int i = 0; i < args.nb_philos; i++)
@@ -14,10 +13,8 @@ int check_death(t_philo *philos, t_args			args)
 			if ( ( time_diff(&start) > philos[i].args.time_to_die && philos[i].last_eat == -1) 
 				|| ( ( time_diff(&start) - philos[i].last_eat) > philos[i].args.time_to_die ))
 			{
-				dead = 1;
-				if (dead)
-					printf("%ld %d \e[1;31m died \e[0m\n", time_diff(&start), philos[i].index);
-				dead = 0;
+				*(args.dead) = 1;
+				printf("%ld %d \e[1;31m died \e[0m\n", time_diff(&start), philos[i].index);
 				return (1);
 			}
 			if (*philos[i].args.counter >= args.nb_must_eat * args.nb_philos)
@@ -41,10 +38,12 @@ int get_arguments(int argc, t_args *args, char *argv[])
 	pthread_mutex_init(&args->number_eat, NULL);
 	args->counter = malloc(sizeof(int));
 	*(args->counter) = 0;
+	args->dead = malloc(sizeof(int));
+	*(args->dead) = 0;
 	return (0);
 }
 
-int create_threads(t_philo	*philos, t_args	args)
+pthread_t	* create_threads(t_philo	*philos, t_args	args)
 {
 	pthread_t		*threads;
 	int				error;
@@ -56,10 +55,10 @@ int create_threads(t_philo	*philos, t_args	args)
 		if (error != 0)
 		{
 			printf("Thread can't be created \n");
-			return (1);
+			return (NULL);
 		}
 	}
-	return (0);
+	return (threads);
 }
 
 t_philo *init_philos(t_args	args)
@@ -86,14 +85,22 @@ int main(int argc, char *argv[])
 {
 	t_args			args;
 	t_philo			*philos;
+	pthread_t		*threads;
 
 	if (argc == 5 || argc == 6)
 	{
 		get_arguments(argc, &args, argv);
 		philos = init_philos(args);
-		if (create_threads(philos, args))
+		threads = create_threads(philos, args);
+		if (!threads)
 			return (1);
 		check_death(philos, args);
+		// for (int i = 0; i < args.nb_philos; i++)
+		// {
+		// 	free(threads[i]);
+		// 	threads[i] = NULL;
+		// }
+		// free(threads);
 	}
 	else
 		printf("Error args\n");

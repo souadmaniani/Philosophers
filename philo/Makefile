@@ -6,7 +6,8 @@ all		:	$(NAME)
 $(NAME) : $(SRC)
 			@gcc -Wall -Wextra -Werror $(SRC) -o $(NAME)  -pthread
 clean	:
-		@rm -f $(NAME)
+		@rm -rf $(NAME)
+		@rm -rf philo.dSYM
 fclean	: clean	
 re		: fclean
 		@make all
