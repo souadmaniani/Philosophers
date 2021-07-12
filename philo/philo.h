@@ -12,6 +12,7 @@ typedef struct s_args
 	int	time_to_sleep;
 	double	number_of_times_each_philosopher_must_eat;
 	pthread_mutex_t number_eat;
+	int *counter;
 }               t_args;
 
 typedef struct s_philo
@@ -23,3 +24,6 @@ typedef struct s_philo
 }			t_philo;
 
 int	ft_atoi(const char *str);
+long time_diff(struct timeval *start);
+long time_to_ms(struct timeval *time);
+long last_eat(struct timeval *start, struct timeval *end);

@@ -1,10 +1,10 @@
 NAME	=	philo
-SRC		=	main.c ft_atoi.c
-OBJ		=	main.o ft_atoi.o
+SRC		=	main.c ft_atoi.c utils.c
+OBJ		=	main.o ft_atoi.o utils.o
 
 all		:	$(NAME)
 $(NAME) : $(SRC)
-			@gcc  $(SRC) -o $(NAME)  -pthread
+			@gcc -Wall -Wextra -Werror $(SRC) -o $(NAME)  -pthread
 clean	:
 		@rm -f $(NAME)
 fclean	: clean	
