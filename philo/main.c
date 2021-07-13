@@ -1,33 +1,34 @@
 #include "philo.h"
 
-int check_death(t_philo *philos, t_args			args)
+int	check_death(t_philo *philos, t_args	args)
 {
-	struct timeval start;
+	struct timeval	start;
+	int				i;
 
 	gettimeofday(&start, NULL);
 	while (1)
 	{
-		for (int i = 0; i < args.nb_philos; i++)
+		i = -1;
+		while (++i < args.nb_philos)
 		{
-			// pthread_mutex_lock(&philos[i].eating);
-			// !philos[i + 1].is_eating && 
-			if ((( time_diff(&start) > philos[i].args.time_to_die && philos[i].last_eat == -1) 
-				|| ( ( time_diff(&start) - philos[i].last_eat) > philos[i].args.time_to_die )))
+			if (!philos[i].is_eating && ((philos[i].last_eat == -1
+						&& time_diff(&start) > philos[i].args.time_to_die)
+					|| ((time_diff(&start) - philos[i].last_eat)
+						> philos[i].args.time_to_die)))
 			{
 				pthread_mutex_lock(philos[i].args.print);
-				printf("%ld %d \e[1;31m died \e[0m\n", time_diff(&start), philos[i].index);
+				printf("%ld %d died \n", time_diff(&start), philos[i].index);
 				return (1);
-				// pthread_mutex_unlock(philos[i].eating);
 			}
 			if (*philos[i].args.counter >= args.nb_must_eat * args.nb_philos)
-					return (1);
+				return (1);
 		}
 		usleep(100);
 	}
 	return (0);
 }
 
-int get_arguments(int argc, t_args *args, char *argv[])
+int	get_arguments(int argc, t_args *args, char *argv[])
 {
 	args->nb_philos = ft_atoi(argv[1]);
 	args->time_to_die = ft_atoi(argv[2]);
@@ -45,13 +46,15 @@ int get_arguments(int argc, t_args *args, char *argv[])
 	return (0);
 }
 
-pthread_t	* create_threads(t_philo	*philos, t_args	args)
+pthread_t	*create_threads(t_philo	*philos, t_args	args)
 {
 	pthread_t		*threads;
 	int				error;
+	int				i;
 
+	i = -1;
 	threads = malloc(args.nb_philos * sizeof(pthread_t));
-	for (int i = 0; i < args.nb_philos; i++)
+	while (++i < args.nb_philos)
 	{
 		error = pthread_create(&threads[i], NULL, philo_actions, &philos[i]);
 		if (error != 0)
@@ -63,32 +66,36 @@ pthread_t	* create_threads(t_philo	*philos, t_args	args)
 	return (threads);
 }
 
-t_philo *init_philos(t_args	args)
+t_philo	*init_philos(t_args	args)
 {
 	int				i;
 	t_philo			*philos;
-	pthread_mutex_t *locks;
+	pthread_mutex_t	*locks;
 
+	i = -1;
 	locks = malloc(args.nb_philos * sizeof(pthread_mutex_t));
-	for (i = 0; i < args.nb_philos; i++)
+	while (++i < args.nb_philos)
 		pthread_mutex_init(&locks[i], NULL);
 	philos = malloc(args.nb_philos * sizeof(t_philo));
-	for (i = 0; i < args.nb_philos; i++)
+	i = -1;
+	while (++i < args.nb_philos)
 	{
 		philos[i].index = i + 1;
 		philos[i].args = args;
 		philos[i].locks = locks;
 		philos[i].last_eat = -1;
+		philos[i].is_eating = 0;
 	}
 	return (philos);
 }
 
-int main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
 	t_args			args;
 	t_philo			*philos;
 	pthread_t		*threads;
 	int				i;
+
 	if (argc == 5 || argc == 6)
 	{
 		get_arguments(argc, &args, argv);
@@ -97,7 +104,7 @@ int main(int argc, char *argv[])
 		if (!threads)
 			return (1);
 		check_death(philos, args);
-		usleep(1000);
+		usleep(1000 * args.nb_philos);
 		free(threads);
 	}
 	else

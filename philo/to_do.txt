@@ -1,2 +1,0 @@
-protect died message
-protect eat state
