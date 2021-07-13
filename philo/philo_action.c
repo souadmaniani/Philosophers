@@ -1,8 +1,22 @@
 #include "philo.h"
+// akhir msg howa die msg 
+// int	die_msg(pthread_mutex_t print, struct timeval start, t_philo philo)
+// {
+// 	pthread_mutex_lock(&print);
+// 	printf("%ld %d \e[1;31m died \e[0m\n", time_diff(&start), philo.index);
+// 	return (1);
+// }
+
+// void	normal_print(char	*str)
+// {
+
+// 	pthread_mutex_lock(&print);
+// 	// str (is eating)
+// 	pthread_mutex_unlock(&print);
+// }
 
 int  eat(t_philo *philo, int left, int right, struct timeval start)
 {
-	// printf("****> %d\n\n",*(philo->args.dead));
 	left = (philo->args.nb_philos + philo->index - 2) % (philo->args.nb_philos);
 	right = philo->index - 1;
 	pthread_mutex_lock(&philo->locks[left]);

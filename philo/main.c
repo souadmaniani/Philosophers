@@ -5,17 +5,19 @@ int check_death(t_philo *philos, t_args			args)
 	struct timeval start;
 
 	gettimeofday(&start, NULL);
-	printf("%d\n\n\n", *(args.dead));
 	while (1)
 	{
 		for (int i = 0; i < args.nb_philos; i++)
 		{
-			if ( ( time_diff(&start) > philos[i].args.time_to_die && philos[i].last_eat == -1) 
-				|| ( ( time_diff(&start) - philos[i].last_eat) > philos[i].args.time_to_die ))
+			// pthread_mutex_lock(&philos[i].eating);
+			if (!philos[i].is_eating && (( time_diff(&start) > philos[i].args.time_to_die && philos[i].last_eat == -1) 
+				|| ( ( time_diff(&start) - philos[i].last_eat) > philos[i].args.time_to_die )))
 			{
 				*(args.dead) = 1;
 				printf("%ld %d \e[1;31m died \e[0m\n", time_diff(&start), philos[i].index);
+				//die_msg(pthread_mutex_t print, start, philo[i]);
 				return (1);
+				// pthread_mutex_unlock(philos[i].eating);
 			}
 			if (*philos[i].args.counter >= args.nb_must_eat * args.nb_philos)
 					return (1);

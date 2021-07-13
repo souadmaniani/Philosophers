@@ -23,6 +23,9 @@ typedef struct s_philo
 	t_args args;
 	long last_eat;
 	pthread_mutex_t *locks;
+	// pthread_mutex_t		eating;
+	int					is_eating;
+	// initialze b 0 and dont check if egal 1
 }			t_philo;
 
 int	ft_atoi(const char *str);
