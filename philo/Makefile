@@ -4,7 +4,7 @@ OBJ		=	main.o ft_atoi.o utils.o philo_action.o
 
 all		:	$(NAME)
 $(NAME) : $(SRC)
-			@gcc -Wall -Wextra -Werror $(SRC) -o $(NAME)  -pthread
+			@gcc $(SRC) -o $(NAME)  -pthread
 clean	:
 		@rm -rf $(NAME)
 		@rm -rf philo.dSYM

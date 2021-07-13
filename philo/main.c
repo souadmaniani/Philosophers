@@ -10,12 +10,12 @@ int check_death(t_philo *philos, t_args			args)
 		for (int i = 0; i < args.nb_philos; i++)
 		{
 			// pthread_mutex_lock(&philos[i].eating);
-			if (!philos[i].is_eating && (( time_diff(&start) > philos[i].args.time_to_die && philos[i].last_eat == -1) 
+			// !philos[i + 1].is_eating && 
+			if ((( time_diff(&start) > philos[i].args.time_to_die && philos[i].last_eat == -1) 
 				|| ( ( time_diff(&start) - philos[i].last_eat) > philos[i].args.time_to_die )))
 			{
-				*(args.dead) = 1;
+				pthread_mutex_lock(philos[i].args.print);
 				printf("%ld %d \e[1;31m died \e[0m\n", time_diff(&start), philos[i].index);
-				//die_msg(pthread_mutex_t print, start, philo[i]);
 				return (1);
 				// pthread_mutex_unlock(philos[i].eating);
 			}
@@ -38,10 +38,10 @@ int get_arguments(int argc, t_args *args, char *argv[])
 	else
 		args->nb_must_eat = 1.0 / 0.0;
 	pthread_mutex_init(&args->number_eat, NULL);
+	args->print = malloc(sizeof(pthread_mutex_t));
+	pthread_mutex_init(args->print, NULL);
 	args->counter = malloc(sizeof(int));
 	*(args->counter) = 0;
-	args->dead = malloc(sizeof(int));
-	*(args->dead) = 0;
 	return (0);
 }
 
@@ -88,7 +88,7 @@ int main(int argc, char *argv[])
 	t_args			args;
 	t_philo			*philos;
 	pthread_t		*threads;
-
+	int				i;
 	if (argc == 5 || argc == 6)
 	{
 		get_arguments(argc, &args, argv);
@@ -97,12 +97,8 @@ int main(int argc, char *argv[])
 		if (!threads)
 			return (1);
 		check_death(philos, args);
-		// for (int i = 0; i < args.nb_philos; i++)
-		// {
-		// 	free(threads[i]);
-		// 	threads[i] = NULL;
-		// }
-		// free(threads);
+		usleep(1000);
+		free(threads);
 	}
 	else
 		printf("Error args\n");

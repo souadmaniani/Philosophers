@@ -14,7 +14,7 @@ typedef struct s_args
 	double	nb_must_eat;
 	pthread_mutex_t number_eat;
 	int *counter;
-	int *dead;
+	pthread_mutex_t *print;
 }               t_args;
 
 typedef struct s_philo
